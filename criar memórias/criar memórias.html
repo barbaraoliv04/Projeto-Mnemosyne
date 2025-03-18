@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar memórias</title>
+    <link rel="stylesheet" href="../assets/styles/global.css">
+    <link rel="stylesheet" href="../criar memórias/criar memórias.css">
+
+</head>
+<body>
+    <header class="app-header">
+        <img src="../assets/icons/mnemosyne-logo.svg" alt="Logo do site Mnemosyne.">
+        <nav class="links">
+            <a href="#">home</a>
+            <a href="#">adicionar memória</a>
+        </nav>
+    </header>
+    <div class="cx-alerta" id="cx-alerta">
+        <p><strong>Aviso!</strong></p>
+        <p>É necessário adicionar ao menos uma imagem para criar uma memória.</p>
+
+    </div>
+    <!-- /* O Main é um elemento semântico que define a seção de conteúdo principal do corpo do documento */ -->
+    <main class="app-main"> 
+        <h1>Crie uma memória</h1>
+        <form class="formulario">
+            <!-- /* O Label serve para identificar os campos de um formulário, como caixas de seleção, botões de opção e campos de texto */ -->
+            <label class="lbl-txt" for="titulo">Título</label> 
+            <input type="text" id="titulo" placeholder="Insira o título aqui">
+
+            <label class="lbl-txt" for="descricao">Descrição</label>
+
+            <!-- TextArea é um campo de texto maior que o Input -->
+            <textarea name="" id="descricao" placeholder="Insira a descrição aqui"></textarea> 
+           
+            <label class="lbl-txt">Imagens</label>
+            <button class="add-imagens">+ Adicionar imagens</button>
+
+            <p class="nenhum">Nenhuma imagem adicionada no momento</p>
+            <div class="img-container">
+                <!-- <img src="../assets/img/baões.png" alt="Balões coloridos.">
+                <img src="../assets/img/baões.png" alt="Balões coloridos.">
+                <img src="../assets/img/baões.png" alt="Balões coloridos.">
+                <img src="../assets/img/baões.png" alt="Balões coloridos."> -->
+            </div>
+            <button type="submit" class="btn-criar">Criar memória</button>
+        </form>
+    </main>
+    <footer class="app-footer"></footer>
+        <p>Mnemosyne - Bárbara Oliveira 😁</p>
+    </footer>
+</body>
+</html>

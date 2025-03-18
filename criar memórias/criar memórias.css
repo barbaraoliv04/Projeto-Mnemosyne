@@ -1,0 +1,112 @@
+/* Quando colocamos o "." estamos estilazando as class (class) */
+
+.formulario {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+    gap: 15px;
+
+}
+
+.lbl-txt {
+
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+/* Vamos estilizar os "ID" utilizando o "#" */
+
+#titulo, #descricao {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #eee;
+
+}
+
+#descricao {
+
+    height: 100px;
+    resize: none; 
+
+}
+
+/* Estamos estilizando os elementos do botão, sendo a caixinha, mais a fonte e cor do texto */
+.add-imagens {
+
+    background: none;
+    border: 2px solid #007bff;
+    padding: 10px;
+    color: #007bff;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.add-imagens:hover {
+
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+
+}
+
+.btn-criar {
+
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+
+}
+
+.btn-criar:hover {
+
+    background-color: #0056B3;
+    cursor: pointer;
+}
+
+.img-container {
+
+    display: flex;
+    gap: 10px;
+    /* O OverFlow-X é uma configuração de redirecionamneto para travar a imagem e acrescenta uma barra de rolagem */
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.img-container img {
+
+    width: 180px;
+    height: auto;
+
+}
+
+/* .nenhum {
+
+    display: none;
+
+} */
+
+/* Estamos configurando o texto de aviso  */
+.cx-alerta {
+
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    background-color: #f4f146;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0.2);
+    font-size: 16px;
+    max-width: 300px;
+}

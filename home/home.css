@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Jost", sans-serif;
+
+    margin: 0%;
+    padding: 0%;
+
+    color: #464646;
+}
+
+.app-header { /* Vamos configurar o cabeçalho da página */
+
+    height: 80px;
+
+    display: flex; /* Vai posicionar os elementos como a logo do site e os links ladoa a lado */
+    justify-content: space-between; /* Aqui você está pedindo para que os elementos se alinhem no canto da página */
+    align-items: center; /* Configuração para alinhar no centro */
+    
+    padding-left: 80px; /* Espaçamento interno dos itens (Esquerdo) */
+    padding-right: 80px; /* Lado direto */
+    
+    box-shadow: 0px 2px 4px #464646; /* Configuração de sombreamento da caixa do cabeçalho */    
+
+}
+
+.app-footer { /* Vamos configurar o rodapé da página */
+
+    height: 80px;
+
+    display: flex; /* Vai posicionar os elementos como a logo do site e os links ladoa a lado */
+    justify-content: center; /* Aqui você está pedindo para que os elementos se alinhem no canto da página */
+    align-items: center; /* Configuração para alinhar verticalmente no centro */
+    
+    padding-left: 80px; /* Espaçamento interno lado ESQUERDO dos itens */
+    padding-right: 80px; /* Espaçamento interno lado DIREITO dos itens */
+    
+    box-shadow: 0px -2px 4px #464646; /* Configuração de sombreamento da caixa do rodapé */    
+
+}
+
+.links a { /* Vamos configurar os links do menu */
+
+    font-size: 30px;
+    text-decoration: none; /* Retirou o sublinhado dos links */
+    padding-left: 35px;
+    text-transform: uppercase; /* Configuração de palavras para MAÍSCULAS */
+
+}
+
+.app-main {
+
+    padding: 40px 80px; /* Dois valores para lado e cima do elemento */
+
+}
+
+ h1 {
+
+    font-size: 70px;
+    font-weight: normal;
+    margin-bottom: 40px; /* Margem de distância do elementos no sentido de baixo */
+
+}
+
+ body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+
+}
+
+.imagem {
+
+    height: 300px;
+    width: 300px;
+
+    border-radius: 10px; /* Arredendoar a borda da imagem */ 
+
+    background-image: url("../assets/img/bg1.png");
+    background-size: cover; /* Vai redimensionar a imagem para caber no elemento */
+
+}
+
+.cards-conteiner {
+
+    display: flex;
+    flex-wrap: wrap; /* configuração para redimensionamento de telas, caso seja pequena, os elementos vão se encaixar conforme o tamanho */
+    
+    margin: 80px;
+
+}
+
+.card {
+
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all ease 0.3s;
+    
+}
+
+.card:hover {
+
+    cursor: pointer; /* Vai mudar o cursosr do mouse */
+    scale: 1.05; /* Vai */
+
+}
+
+h2 {
+
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 16px;
+
+}
+
+.add {
+
+    height: 300px;
+    width: 300px;
+
+    border-radius: 10px;
+    background-color: #464646;
+    background-image: url(../assets/icons/plus-solid.svg);
+    background-size: 50%;
+    background-repeat: no-repeat; /* Está dizendo que não haverá repetições da imagem */
+    background-position: center;
+}
